@@ -21,7 +21,7 @@ class SourcesTest(unittest.TestCase):
         self.assertEquals(self.new_source.url,'cnn.com')
         self.assertEquals(self.new_source.category,'general')
         self.assertEquals(self.new_source.country,'U.S.A')
-        self.assertEquals(self.new_source.language,'en')
+     
 
 class ArticlesTest(unittest.TestCase):
     '''
@@ -44,4 +44,4 @@ class ArticlesTest(unittest.TestCase):
         self.assertEquals(self.new_article.description,'A look at various tech hubs in Africa and the impact they have on the worlds economy')
         self.assertEquals(self.new_article.url,'techie.com')
         self.assertEquals(self.new_article.image,'techie.com/7643t94.jpg')
-        self.assertEquals(self.new_article.date,'2018-04-11T07:57:16Z')
+        self.assertEquals(self.new_article.date,'2019-09-14')
