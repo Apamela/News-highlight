@@ -13,9 +13,9 @@ def index():
     entertainment_sources= get_sources('entertainment')
     technology_sources= get_sources('technology')
     business_sources= get_sources('business')
-    politics_sources= get_sources('politics')
-    title="News-highlight"
-    return render_template('index.htm',title=tltle,technology=technology_sources,business=business_sources,politics=politics_sources)
+    sports_sources= get_sources('Sports')
+    title= 'News-highlight'  
+    return render_template('index.html',title=title,technology=technology_sources,business=business_sources,sports=sports_sources)
 
 @main.route('/sources/<id>')
 def articles(id):
