@@ -18,10 +18,10 @@ def index():
     return render_template('index.htm',title=tltle,sources=sources,technology=technology_sources,business=business_sources,politics=politics_sources)
 
 @main.route('/sources/<id>')
-def articles(id)
+def articles(id):
     '''
     view articles page
     '''
     articles= get_articles(id)
-    title=
+    title='top articles'
     return render_template('articles.html',title=title,articles=articles)
