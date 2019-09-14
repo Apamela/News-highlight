@@ -6,23 +6,23 @@
  <div class="container">
      <!--Entertainment News-->
  <h3>Entertainment News Sources</h3>
- <ul>
-    {{ macro.displaySourceList(Entertianment_sources)}}
- </ul>
+ <hr>
+ {{ macro.displaySourceList(Entertianment_sources)}}
+ 
  <!-- Technology news-->
  <h3>Technology News Sources </h3>
-         <ul>
-            {{ macro.displaySourceList(Technology_sources)}}
-        </ul>
-        <!-- Business News -->
-        <h3> Business News Source</h3>
-         <ul>
-            {{ macro.displaySourceList(Business_sources)}}
-        </ul>
-    <!--Sports News-->
-    <h3>Sports News Source</h3>
-      <ul>
-          {{macro.displaySourceList(Sports_sources)}}
-      </ul>
+ <hr>
+ {{ macro.displaySourceList(Technology_sources)}}
+        
+ <!-- Business News -->
+ <h3> Business News Source</h3>
+ <hr>
+ {{ macro.displaySourceList(Business_sources)}}
+    
+  <!--Sports News-->
+ <h3>Sports News Source</h3>
+ <hr>
+ {{macro.displaySourceList(Sports_sources)}}
+    
  </div>
  {% endblock%}
