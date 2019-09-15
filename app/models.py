@@ -21,4 +21,5 @@ class Articles:
         self.description = description
         self.image = image
         self.url = url
+        self.date=date
         
