@@ -8,15 +8,18 @@ base_url=None
 #Getting the articles url
 Articles_url=None
 def configure_request(app):
-    global api_key,base_url
+    global api_key,base_url,base_url_articles
     api_key = app.config['NEWS_API_KEY']
     base_url = app.config['NEWS_SOURCES_BASE_URL']
-    Articles_url=app.config['ARTICLES_BASE_URL']
+    base_url_articles =app.config['ARTICLES_BASE_URL']
+    print(api_key)
+    print(base_url)
 def get_sources(category):
     '''
     Function that  gets the json response to url request
     '''
     get_sources_url = base_url.format(category,api_key)
+    print(get_sources_url)
     with urllib.request.urlopen(get_sources_url) as url:
          get_sources_data=url.read()
          get_sources_response=json.loads(get_sources_data)
@@ -52,19 +55,19 @@ def get_articles(id):
 	'''
 	Function that gets the json response to our url request
 	'''
-	get_sources_url = base_url.format(category,api_key)
+	get_articles_url = base_url_articles.format(id,api_key)
 
-	with urllib.request.urlopen(get_sources_url) as url:
-		get_sources_data = url.read()
-		get_sources_response = json.loads(get_sources_data)
+	with urllib.request.urlopen(get_articles_url) as url:
+		get_articles_data = url.read()
+		get_articles_response = json.loads(get_articles_data)
 
-		sources_results = None
+		articles_results = None
 
-		if get_sources_response['sources']:
-			sources_results_list = get_sources_response['sources']
-			sources_results = process_sources(sources_results_list)
+		if get_articles_response['articles']:
+			articles_results_list = get_articles_response['articles']
+			articles_results = process_articles(articles_results_list)
 
-	return sources_results
+	return articles_results
 def process_articles(articles_list):
 	'''
 	'''

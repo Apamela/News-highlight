@@ -4,25 +4,25 @@
  <!--Content block-->  
     {% block content %}    
  <div class="container">
-     <!--Entertainment News-->
- <h3>Entertainment News Sources</h3>
+     <!--entertianment News-->
+ <h3>Entertianment News Sources</h3>
  <hr>
- {{ macro.displaySourceList(Entertianment_sources)}}
+ {{ macro.displaySourceList(entertainment)}}
  
  <!-- Technology news-->
  <h3>Technology News Sources </h3>
  <hr>
- {{ macro.displaySourceList(Technology_sources)}}
+ {{ macro.displaySourceList(technology)}}
         
  <!-- Business News -->
  <h3> Business News Source</h3>
  <hr>
- {{ macro.displaySourceList(Business_sources)}}
+ {{ macro.displaySourceList(business)}}
     
   <!--Sports News-->
  <h3>Sports News Source</h3>
  <hr>
- {{macro.displaySourceList(Sports_sources)}}
+ {{macro.displaySourceList(sports)}}
     
  </div>
  {% endblock%}
