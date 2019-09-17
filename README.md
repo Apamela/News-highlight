@@ -1,5 +1,5 @@
 # News-highlight
-## By Pamela UMutoniwase
+## By Pamela Umutoniwase
 
 ## Description
 
@@ -12,7 +12,7 @@ With the application, a user will be able to:
 * See Image description and time the news article was created.
 * Click on an article and read it fully from the news source
 
-## BDD(Behavior Driven Developer)
+## BDD(Behavior Driven Developement)
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | Display news sources | **On page load** | List of various news sources is displayed per category |
