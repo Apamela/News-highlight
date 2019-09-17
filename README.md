@@ -25,4 +25,4 @@ With the application, a user will be able to:
 * Python V3.6
 * Flask
 ## License
-
+Copyright (c) 2019 pamy
