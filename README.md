@@ -1,5 +1,5 @@
 # News-highlight
-## By Pamel Umutoniwase
+## By Pamela 
 
 ## Description
 
