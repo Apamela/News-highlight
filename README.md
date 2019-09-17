@@ -19,10 +19,13 @@ With the application, a user will be able to:
 | Display articles from a news source | **Click a news source** | Redirected to a page with a list of articles from the source |
 | Display the preview of an article | **On page load** | Each article displays an image, title, description and publication date |
 
-
 ## Technology Used
 * BooStrap
 * Python V3.6
 * Flask
+## Contact/number
+  Phonenumber:+250780365718
+  Email: pamelab.desire@gmail.com
+
 ## License
 Copyright (c) 2019 pamy
